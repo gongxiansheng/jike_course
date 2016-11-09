@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/*sidebar*/
+.aside {
+  float: left;
+  width: 210px;
+  background: #fff;
+}
+.aside > .sidemenu {
+  border: 1px solid #35b558;
+  font-size: 14px;
+}
+.aside > .sidemenu > p {
+  position: relative;
+  height: 45px;
+  margin: 0;
+  padding-left: 32px;
+  line-height: 45px;
+  color: #35b558;
+  border-bottom: 1px solid #eee;
+}
+.aside > .sidemenu > p:before {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../img/course/icon-course-curr.png) no-repeat;
+  background-size: 15px 15px;
+}
+.aside > .sidemenu li {
+  position: relative;
+  padding-left: 32px;
+  z-index: 1000;
+  height: 37px;
+  line-height: 37px;
+  border-bottom: 1px solid #eee;
+}
+.aside > .sidemenu li > a {
+  position:absolute;
+  display: block;
+  color: #666666;
+}
+.aside > .sidemenu li >i {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+
+.aside > .sidemenu li:hover > a {
+  color: #35b558;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 3px 3px 0 rgba(0 0 0 .5)
+}
+.aside > .sidemenu li:hover:before {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  z-index: 1001;
+  content: "";
+  width: 5px;
+  height: 38px;
+  background: #fff;
+}
+.aside > .sidemenu li:hover i{
+  display:none;
+}
+.aside > .sidemenu li:hover .list{
+  display:block;
+}
+.aside > .othermenu li {
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #eee;
+}
+.aside > .othermenu li > a {
+  display: inline-block;
+  padding-left: 32px;
+  font-size: 14px;
+  color: #666666;
+}
+.aside > .othermenu li > span {
+  display: none;
+  float: right;
+  color: #d8d8d8;
+  margin-right: 10px;
+}
+.aside > .othermenu li:before {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../img/sprite.png) 0 0 no-repeat;
+  background-size: 64px 64px;
+}
+.aside > .othermenu li:first-child:before {
+  background-position: -45px 0;
+}
+.aside > .othermenu li:nth-child(2):before {
+  background-position: -30px -11px;
+}
+.aside > .othermenu li:nth-child(3):before {
+  background-position: 0 0;
+  background-size: 12px 12px;
+}
+.aside > .othermenu li:last-child:before {
+  background-position: -15px -13px;
+}
+.aside .othermenu li:last-child {
+  border: none;
+}
+.aside > .othermenu li:hover {
+  background: #fafafa;
+  cursor: pointer;
+}
+.aside > .othermenu li:hover span {
+  display: inline;
+}
+.aside li .list {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 400px;
+  min-height: 427px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.aside li .list dl {
+  width: 370px;
+  margin: 0;
+}
+.aside li .list dl dt {
+  height: 36px;
+  line-height: 45px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.aside li .list dl dd {
+  padding: 3px 0;
+  margin: 0;
+}
+.aside li .list dl dd a {
+  padding: 0 5px;
+  margin: 5px 0;
+  font-size: 12px;
+  border-left: 1px solid #e0e0e0;
+}
+.aside li .list dl dd a:first-child {
+  border-left: none;
+}
+.aside li .list1 {
+  top: -47px;
+  left: 208px;
+}
+.aside li .list2 {
+  top: -85px;
+  left: 208px;
+}
+.aside li .list3 {
+  top: -123px;
+  left: 208px;
+}
+.aside li .list4 {
+  top: -161px;
+  left: 208px;
+}
+.aside li .list5 {
+  top: -199px;
+  left: 208px;
+}
+.aside li .list6 {
+  top: -237px;
+  left: 208px;
+}
+.aside li .list7 {
+  top: -275px;
+  left: 208px;
+}
+.aside li .list8 {
+  top: -313px;
+  left: 208px;
+}
+.aside li .list9 {
+  top: -351px;
+  left: 208px;
+}
+.aside li .list10 {
+  top: -389px;
+  left: 208px;
+}
+/*content-body*/
+.content-body {
+  float: right;
+  position: relative;
+  width: 776px;
+}
+.content-body .bd {
+  width: 776px;
+  color: #666666;
+  font-size: 14px;
+}
+.content-body .bd .content-nav {
+  width: 776px;
+  height: 38px;
+  background: #fff;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  height: 38px;
+  padding: 0 15px;
+  line-height: 38px;
+  text-align: center;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li .select {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 2px #ccc;
+  box-sizing: border-box;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li .select a {
+  color: #666666;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li .select li:hover a {
+  color: #35b558;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li .select1 {
+  width: 77px;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li .select2 {
+  width: 103px;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li:first-child {
+  border-right: 1px solid #eee;
+}
+.content-body .bd .content-nav .content-nav-s > ul > li:hover > .select {
+  display: block;
+}
+.content-body .bd .content-nav .previewMode {
+  width: 72px;
+  height: 38px;
+  float: right;
+}
+.content-body .bd .content-nav .previewMode i {
+  display: inline-block;
+  float: left;
+  width: 35px;
+  height: 38px;
+  cursor: pointer;
+}
+.content-body .bd .content-nav .previewMode i.icon-kuai {
+  background: url(../img/course/icon-kuai.png) no-repeat;
+  background-size: 14px 14px;
+  background-position: center center;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.content-body .bd .content-nav .previewMode i.icon-list {
+  background: url(../img/course/icon-list.png) no-repeat;
+  background-size: 14px 14px;
+  background-position: center center;
+}
+/*course-introduce*/
+.course-introduce {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 776px;
+}
+
+/*块式排列*/ 
+.mode1 li {
+  float: left;
+  width: 250px;
+  height: 225px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  background: #fff;
+}
+.course-introduce ul.mode1 li:nth-child(3n+3) {
+  margin-right: 0;
+}
+.course-introduce ul:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.mode1 .lesson:hover .lesson-pic .playericon{
+  opacity:1;
+}
+.mode1 .lesson:hover .lesson-introduce{
+  height:175px;
+}
+.mode1 .lesson:hover .lesson-introduce>p{
+  height:52px;
+}
+.mode1 .lesson-info:hover a,
+.mode2 .lesson-info:hover a{
+  color:#45bb65;
+}
+.mode1 .lesson:hover  .lf p:nth-child(2),
+.mode1 .lesson:hover  .rf p:nth-child(1){
+  display:block;
+}
+.mode1 .lesson .lesson-pic {
+  position: relative;
+  width: 250px;
+  height: 135px;
+}
+.mode1 .lesson .lesson-pic a>img{
+  width:250px;
+  height:135px;
+}
+.mode1 .lesson .lesson-pic .playericon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 135px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity .2s ease;
+  -webkit-transition: opacity .8s ease;
+  -moz-transition: opacity .8s ease;
+  -o-transition: opacity .8s ease;
+}
+.mode1 .lesson .lesson-pic .playericon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.mode1 .lesson .lesson-introduce {
+  position: relative;
+  z-index: 800;
+  width: 250px;
+  height: 88px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.mode1 .lesson .lesson-introduce h2 {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden;
+}
+.mode1 .lesson .lesson-introduce>p {
+  margin: 0;
+  height: 0;
+  margin-bottom: 10px;
+  color: #808080;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  transition: height .5s ease;
+  -webkit-transition: height .5s ease;
+  -moz-transition: height .5s ease;
+  -o-transition: height .5s ease;
+}
+.lf,
+.rf{
+  float:left;
+  width:50%;
+}
+.rf{
+  text-align:right;
+}
+.lf p,
+.rf p{
+  margin:0;
+}
+.mode1 .lf,
+.mode1 .rf{
+  height:52px;
+}
+.mode1 .lf p,
+.mode1 .rf p{
+  line-height:26px;
+}
+.mode1  .lf p:nth-child(2),
+.mode1 .rf p:nth-child(1){
+  display:none;
+}
+
+.lf p .clockicon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  margin-right: 3px;
+  background: url(../img/course/clock-icon.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+.lf p .one-ji {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background: url(../img/course/one-ji_1731712.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+.mode1 .rf p span {
+  font-size: 12px;
+}
+.mode1 .rf p:last-child {
+  position: relative;
+  top: 5px;
+}
+.rf p a i {
+  display: block;
+  float:right;
+  width: 16px;
+  height: 16px;
+  background: url(../img/course/jsicon.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+/*行式排列*/ 
+.mode2 li {
+  width: 776px;
+  height: 100px;
+  margin-bottom: 13px;
+  background: #fff;
+}
+.mode2 .lesson{
+  width: 776px;
+  height: 100px;
+}
+.mode2 .lesson:hover .lesson-pic .playericon{
+  opacity:1;
+}
+.mode2 .lesson .lesson-pic {
+  float: left;
+  position: relative;
+
+}
+.mode2 .lesson .lesson-pic a>img{
+  width:185px;
+  height:100px;
+}
+.mode2  .lesson .lesson-pic .playericon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 185px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity .2s ease;
+  -webkit-transition: opacity .8s ease;
+  -moz-transition: opacity .8s ease;
+  -o-transition: opacity .8s ease;
+}
+.mode2 .lesson .lesson-pic .playericon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  width:50px;
+  height:50px;
+}
+
+.mode2 .lesson .lesson-introduce {
+  position:relative;
+  float: left;
+  width: 570px;
+  height: 100px;
+  margin-left: 15px;
+}
+.mode2 .lesson .lesson-introduce h2 {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+  margin: 5px 0;
+  height: 21px;
+  overflow: hidden;
+}
+.mode2 .lesson .lesson-introduce>p {
+  margin: 0;
+  height: 36px;
+  margin-bottom: 10px;
+  color: #808080;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.mode2 .lf p{
+  float: left;
+  margin-right: 10px;
+}
+.mode2 .rf p:last-child{
+  position:absolute;
+  right:0;
+  top:8px;
+}
+
+
+
+
+/*分页*/ 
+#split-page,
+#split-page *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-size: 14px;
+}
+#split-page{
+  padding-bottom: 30px;
+  padding-left: 60px;
+}
+#split-page div,
+#split-page ul,
+#split-page li{
+  display:inline-block;
+  margin: 0 2px;
+}
+#split-page ul a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+#split-page a{
+  display:block;
+  height:28px;
+  line-height:28px;
+  padding:0 10px;
+  background: #fff;
+  border:1px solid #d5d5d5;
+}
+#split-page a:hover,
+#split-page div[data-page="direct"] button:hover{
+  border:1px solid #45bb65;
+  color:#45bb65;
+}
+#split-page div[data-page="direct"] input{
+  width:32px;
+  margin:0 10px;
+  text-indent: 3px;
+} 
+#split-page div[data-page="direct"] button{
+  width: 32px;
+  height:20px;
+  font-size:13px;
+  margin-left:15px;
+  border: 1px solid #d5d5d5;
+  background: #fff;
+  cursor:pointer;
+}

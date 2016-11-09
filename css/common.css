@@ -1,0 +1,693 @@
+@charset "UTF-8"
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    background: rgb(245, 245, 245);
+}
+
+h2 {
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 16px 0;
+}
+ul,
+li,
+dl,
+dd,
+dt {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1473230291_0121205.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1473230291_0121205.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1473230291_0121205.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1473230291_0121205.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1473230291_0121205.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+                    
+                    
+.iconfont{
+	font-family:"iconfont";
+	font-size:14px;
+	font-style:normal;
+}  
+.color{
+   color: #35b558;
+}                  
+
+/*header*/
+
+#header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+}
+
+#header .head-wrapper {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+#header .head-wrapper .jike_logo {
+    float: left;
+    width: 109px;
+    height: 100%;
+    margin-right: 60px;
+}
+
+#header .head-wrapper .jike_logo img {
+    margin-top: 10px;
+    width: 109px;
+    height: 40px;
+}
+
+#header .head-wrapper nav {
+    float: left;
+    height: 60px;
+}
+#header nav .main-nav>li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    margin-right: 50px;
+    font-size:14px;
+    line-height: 60px;
+}
+#header nav .main-nav>li ul {
+    display:none;
+    position: absolute;
+    top:61px;
+    width: 280px;
+    z-index: 500;
+    background: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    color:#666;
+    opacity: 0;
+}
+
+#header nav .main-nav>li ul li{
+    padding: 0 15px;
+}
+#header nav .main-nav>li:nth-child(2) ul {
+    line-height: 30px;
+}    
+#header nav .main-nav>li ul li.divson{
+    margin: 10px 0;
+    background: #fafafa;
+    font-weight: 300;
+}
+#header nav .main-nav>li ul li a i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    margin-right: 10px!important;
+}
+#header .head-wrapper nav>li:hover {
+	color: rgb(53, 181, 88);
+}
+
+#header .head-wrapper nav .home {
+    color: rgb(53, 181, 88);
+}
+#header nav .main-nav>li:hover>a,
+#header nav .main-nav>li ul li:hover a{
+    color:#45bb65;
+}
+#header nav ul .nav-link:hover>a>i{
+    display:inline-block;
+    animation: arrowrotate 1s forwards; 
+    -webkit-animation: arrowrotate 1s forwards;
+    -moz-animation: arrowrotate 1s forwards;
+    -o-animation: arrowrotate 1s forwards;
+}
+@keyframes arrowrotate{
+    0% {
+        transform:rotate(-180deg);
+    }
+    100% {
+        transform:rotate(180deg);
+    }
+}
+@-webkit-keyframes arrowrotate{
+    0% {
+        transform:rotate(-180deg);
+    }
+    100% {
+        transform:rotate(180deg);
+    }
+}
+@-moz-keyframes arrowrotate{
+    0% {
+        transform:rotate(-180deg);
+    }
+    100% {
+        transform:rotate(180deg);
+    }
+}
+@-o-keyframes arrowrotate{
+    0% {
+        transform:rotate(-180deg);
+    }
+    100% {
+        transform:rotate(180deg);
+    }
+}
+#header nav .main-nav>li:nth-child(3) ul,
+#header nav .main-nav>li:nth-child(4) ul{
+    padding-top: 10px;
+}
+#header nav .main-nav>li:nth-child(3) ul a,
+#header nav .main-nav>li:nth-child(4) ul a{
+    color: #666;
+}
+#header nav .main-nav>li:nth-child(3) ul li span,
+#header nav .main-nav>li:nth-child(4) ul li span{
+    float:right;
+}
+#header nav .main-nav>li:nth-child(3) ul li:hover,
+#header nav .main-nav>li:nth-child(4) ul li:hover{
+    background: #f5f5f5;
+}
+#header nav .main-nav>li:hover ul{
+    display:block;
+    opacity:1;
+    animation: navshow 1s forwards;
+    -webkit-animation: navshow 1s forwards;
+    -moz-animation: navshow 1s forwards;
+    -o-animation: navshow 1s forwards;
+}
+@keyframes navshow{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-webkit-keyframes navshow{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes navshow{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes navshow{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.web-icon {
+	background: url(../img/sprite.png) 0 0 no-repeat;
+	background-size: 64px 64px;
+	background-position: -15px -27px;
+}
+.php-icon {
+	background: url(../img/sprite_02.png) 0 0 no-repeat;
+	background-size: 16px 148px;
+	background-position: -2px -2px;
+}
+.go-icon {
+	background: url(../img/sprite_02.png) 0 0 no-repeat;
+	background-size: 16px 148px;
+	background-position: -2px -38px;
+}
+.ios-icon {
+	background: url(../img/sprite_02.png) 0 0 no-repeat;
+	background-size: 16px 148px;
+	background-position: -2px -82px;
+}
+
+
+
+#header nav .main-nav>li:nth-child(3) ul li a i,
+#header nav .main-nav>li:nth-child(4) ul li a i {
+	background: url(../img/sprite.png) 0 0 no-repeat;
+	background-size: 64px 64px;
+}
+#header nav .main-nav>li:nth-child(3) ul li a  i.kck-icon {
+	background-position: 0 -13px;
+}
+#header nav .main-nav>li:nth-child(3) ul li a  i.zyljt-icon {
+	background-position: -45px 0;
+} 
+#header nav .main-nav>li:nth-child(3) ul li a  i.zstxt-icon {
+	background-position: -30px -13px;
+} 
+#header nav .main-nav>li:nth-child(3) ul li a  i.xlkc-icon {
+	background-position: 0 0;
+	background-size: 12px 12px;
+} 
+#header nav .main-nav>li:nth-child(3) ul li a  i.kcbq-icon {
+	background-position: -15px -13px;
+}  
+#header nav .main-nav>li:nth-child(3) ul li a  i.vip-icon {
+	background-position: -16px 0;
+}
+#header nav .main-nav>li:nth-child(4) ul li a  i.jswd-icon {
+	background-position: 0 -27px;
+} 
+#header nav .main-nav>li:nth-child(4) ul li a  i.wiki-icon {
+	background-position: -29px -27px;
+} 
+#header nav .main-nav>li:nth-child(4) ul li a  i.sq-icon {
+	background-position: 0 2px;
+} 
+#header nav .main-nav>li:nth-child(4) ul li a  i.zyxz-icon {
+	background-position: -30px 0;
+}   
+/**/
+
+#header .head-wrapper .somebox {
+    float: right;
+    height: 60px;
+    width: 200px;
+    line-height: 63px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#header .head-wrapper .somebox ul {
+    width: 100%;
+    height: 100%;
+}
+#header .head-wrapper .somebox ul li {
+    display: inline-block;
+    width: 17px;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+#header .head-wrapper .somebox ul li i {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    background: url(../img/search-icon1.png) no-repeat 0 0;
+    background-size: 17px 17px;
+}
+
+#header .search-icon:hover {
+    background: url(../img/search-icon2.png) no-repeat 0 0;
+    background-size: 17px 17px;
+}
+
+#header .head-wrapper .somebox ul li .app-icon {
+    background: url(../img/app-icon.png) no-repeat 0 0;
+    background-size: 17px 17px;
+}
+
+#header .head-wrapper .somebox ul li .app-icon:hover {
+    background: url(../img/app-icon2.png) no-repeat 0 0;
+    background-size: 17px 17px;
+}
+
+#header .head-wrapper .somebox ul li .user-icon {
+    background: url(../img/user-icon.png) no-repeat 0 0;
+    background-size: 17px 17px;
+}
+/*app-icon hover样式*/
+#header .head-wrapper .somebox ul li .submenu {
+    display: none;
+    position: relative;
+    top:-4px;
+    left: -20px;
+    z-index: 1000;
+}
+#header .head-wrapper .somebox ul li:nth-child(2):hover .submenu,
+#header .head-wrapper .somebox ul li:nth-child(3):hover .submenu {
+    display: block;
+    animation: navshow 1s forwards;
+    -webkit-animation: navshow 1s forwards;
+    -moz-animation: navshow 1s forwards;
+    -o-animation: navshow 1s forwards;
+}
+#header .head-wrapper .somebox ul li .submenu .top-icon {
+    position: absolute;
+    top: -8px;
+    z-index: -1;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+#header .head-wrapper .somebox ul li .submenu img {
+    position: absolute;
+    left: -20px;
+}
+/*µÇÂ¼ÏÂÀ­²Ëµ¥*/
+#header .head-wrapper .somebox ul li .user-icon+.submenu ul{ 
+    position: relative;
+    left: -70px;
+    width: 120px;
+    padding: 5px 0;
+    background: #fff;
+}
+#header .head-wrapper .somebox ul li .user-icon+.submenu ul li {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #fff;
+}
+.somebox ul li .user-icon+.submenu ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+.somebox ul li .user-icon+.submenu ul li:first-child a{
+    display: inline;
+}
+#header .head-wrapper .somebox ul li .user-icon+.submenu ul li:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+#header .head-wrapper .somebox ul li .user-icon+.submenu ul li a:hover{
+    color: #35b558;
+}
+/*search box*/
+.search-box {
+    display:none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 145px;
+    z-index: 100;
+    width: 85%;
+    height: 59px;
+    line-height: 68px;
+    background: #fff;
+}
+.scale {
+    opacity: 1;
+    display: block;
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    animation: scal .5s esae forwards;
+    -webkit-animation: scal .5s esae forwards;
+
+}
+@-webkit-keyframes scal {
+    0% { 
+        opacity: 0;
+        transform: scale(0.1,1)
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1,1)
+    }
+}
+.search-box i.search-icon {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.search-box .close {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/close-icon.png) no-repeat;
+    background-size: 15px 15px ;
+    cursor: pointer;
+}
+.search-box .search {
+    position:absolute;
+    top: 10px;
+    left: 30px;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    box-sizing:border-box;
+}
+.search-box div {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    width: 300px;
+    height:40px;
+    padding: 0 20px;
+    text-align: right;
+    line-height: 40px;
+}
+.search-box div a {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    line-height: 16px;
+    margin-left: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+/*body*/
+#content {
+    width: 100%;
+    height: auto;
+}
+
+#content-wrapper {
+    width: 1000px;
+    height: auto;
+    margin: 20px auto 0 auto;
+}
+
+
+/*footer*/ 
+#footer {
+    clear: both;
+    width: 100%;
+    height: 261px;
+    background-color: #fff;
+}
+
+.footer-wrapper {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-nav {
+    position: relative;
+    height: 189px;
+    padding: 25px 0 0 224px;
+    border-bottom: 1px solid #eee;
+}
+
+.footer-nav .jikelogo {
+    width: 160px;
+    height: 76px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.jikelogo img {
+    width: 109px;
+    height: 40px;
+}
+
+.jikelogo p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+dl {
+    float: left;
+    width: 135px;
+    color: #808080;
+    line-height: 30px;
+}
+
+dl dt {
+    font-size: 14px;
+}
+
+dl a {
+    color: #808080;
+}
+dl a:hover {
+    color: #35b558;
+}
+.footer-nav .app {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 175px;
+    height: 119px;
+    text-align: left;
+}
+
+.footer-nav .app p {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-nav .app .appdown {
+    position: relative;
+    width: 130px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    padding-left: 40px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #808080;
+}
+
+.footer-nav .app .down-android .submenu,
+.footer-nav .app .down-ios .submenu {
+    display: none;
+    position: absolute;
+    top: -150px;
+    left: 0;
+}
+.footer-nav .app .down-android:hover,
+.footer-nav .app .down-ios:hover { 
+    cursor: pointer; 
+}
+
+.footer-nav .app .down-android:hover .submenu,
+.footer-nav .app .down-ios:hover .submenu {
+    display: block;
+}
+
+.footer-nav .app .appdown>img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-wrapper .copyright {
+    width: 80%;
+    height: 45px;
+    // line-height: 45px;
+    // margin: 0 auto;
+    // text-align: center;
+    color: #999;
+}
+.copyright strong a {
+    color: #999;
+}
+
+.copyright div {
+    display: inline;
+    float: right;
+}
+
+.copyright div a:first-child {
+    margin-right: 5px;
+}
+
+/* go top */
+.fixed {
+    position: fixed;
+    z-index:1000;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    cursor: pointer;
+}
+.fixed .gotop {
+    display: none;
+    width: 34px;
+    height: 34px;
+    background: #f7f7f7 url(../img/gotop.jpg) center center no-repeat;
+    background-size: 34px 100px;
+    background-position: 0 0;
+}
+.fixed .gotop:hover {
+    background: #f7f7f7 url(../img/gotop_02.jpg) center center no-repeat;
+    background-size: 34px 100px;
+    background-position: 0 0;
+}
+.fixed a:nth-child(2) {
+    position: relative;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f7f7f7 url(../img/phone-fix.png) center center no-repeat;
+    background-size: 12px 24px;
+}
+.fixed a:nth-child(2):hover {
+    background: #f7f7f7 url(../img/phone-fix_1.png) center center no-repeat;
+    background-size: 12px 24px;
+}
+.fixed a:nth-child(2):hover img{
+    display: block;
+}
+.fixed a:nth-child(2) > img {
+    display: none;
+    position: absolute;
+    top: -75px;
+    right: 34px;
+}
+.fixed a:nth-child(3) {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: #f7f7f7 url(../img/fix_03.jpg) center center no-repeat;
+    background-size: 34px 34px;
+}
+

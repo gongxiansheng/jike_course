@@ -1,0 +1,586 @@
+@charset "UTF-8";
+
+@color: #35b558;
+@s-pic-size: 15px;
+@font-color: #666;
+/*sidebar*/
+.aside {
+	float: left;
+	width: 210px;
+	background: #fff;
+	>.sidemenu {
+		border: 1px solid @color;
+		font-size: 14px;
+		>p {
+			position: relative;
+			height: 45px;
+			margin: 0;
+			padding-left: 32px; 
+			line-height: 45px;
+			color: @color;
+			border-bottom: 1px solid #eee;
+		}
+		>p:before {
+			position: absolute;
+			top: 15px;
+			left: 10px;
+			content: "";
+			width: @s-pic-size;
+			height: @s-pic-size;
+			background: url(../img/course/icon-course-curr.png) no-repeat;
+			background-size: 15px 15px;
+
+		}
+		li {
+			position: relative;
+			z-index:1000;
+			height: 37px;
+			line-height: 37px;
+			border-bottom: 1px solid #eee;
+			>a {
+				display: block;
+				padding-left: 32px; 
+				color: @font-color;
+				i {
+					display: inline-block;
+					float: right;
+					margin-right: 10px;
+					
+				}
+			}
+			
+		}
+		li:hover {
+			box-shadow: 0 1px 2px 0 #eee;
+			transform: translateY(-5px);
+			-webkit-transform: translateY(-5px);
+		}
+		li:hover >a{
+			color: @color;
+		}
+		li:hover:before {
+			position: absolute;
+			top: 5px;
+			right: -1px;
+			z-index: 1001;
+			content: "";
+			width: 5px;
+			height: 33px;
+			background: #fff;
+		}
+	}
+	>.othermenu li{
+		position: relative;
+		height: 45px;
+		line-height: 45px;
+		border-bottom: 1px solid #eee;
+		>a {
+			display: inline-block;
+			padding-left: 32px; 
+			font-size: 14px;
+			color: @font-color;
+		}
+		>span {
+			display: none;
+			float:right;
+			color: rgb(216, 216, 216);
+			margin-right: 10px; 
+		}
+	}
+	>.othermenu li:before {
+		position: absolute;
+		top: 15px;
+		left: 10px;
+		content: "";
+		width: @s-pic-size;
+		height: @s-pic-size;
+		background: url(../img/sprite.png) 0 0 no-repeat;
+    	background-size: 64px 64px;
+	}
+	>.othermenu li:first-child:before {
+    	background-position: -45px 0;
+	}
+	>.othermenu li:nth-child(2):before {
+    	background-position: -30px -11px;
+	}
+	>.othermenu li:nth-child(3):before {
+    	background-position: 0 0;
+    	background-size: 12px 12px;
+	}
+	>.othermenu li:last-child:before {
+    	background-position: -15px -13px;
+	}
+	.othermenu li:last-child {
+		border: none;
+	}
+	>.othermenu li:hover {
+		background: #fafafa;
+		cursor: pointer;
+	}
+	>.othermenu li:hover span {
+		display: inline;
+	}
+	li .list {
+		display: none;
+		position:absolute;
+		z-index: 1000;
+		width:400px;
+		min-height: 427px;
+		padding: 0 15px;
+		border: 1px solid #ddd;
+		background: #fff;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+		box-sizing: border-box;
+		dl {
+			width: 370px;
+			margin: 0;
+			dt{
+				height: 36px;
+				line-height: 45px;
+				border-bottom: 1px solid #f5f5f5;
+			}
+			dd {
+				padding: 3px 0;
+				margin: 0;
+				a {
+					padding: 0 5px;
+					margin: 5px 0;
+					font-size: 12px;
+					border-left: 1px solid #e0e0e0;
+				}
+				a:first-child {
+					border-left:none;
+				}
+			}
+		}
+	}
+	li .list1 {
+		top: -42px;
+		left: 209px;
+	}
+	li .list2 {
+		top: -80px;
+		left: 209px;
+	}
+	li .list3 {
+		top: -118px;
+		left: 209px;
+	}
+	li .list4 {
+		top: -156px;
+		left: 209px;
+	}
+	li .list5 {
+		top: -194px;
+		left: 209px;
+	}
+	li .list6 {
+		top: -232px;
+		left: 209px;
+	}
+	li .list7 {
+		top: -270px;
+		left: 209px;
+	}
+	li .list8 {
+		top: -308px;
+		left: 209px;
+	}
+	li .list9 {
+		top: -346px;
+		left: 209px;
+	}
+	li .list10 {
+		top: -384px;
+		left: 209px;
+	}
+}
+/*content-body*/
+@body-width: 776px;
+.content-body{
+	float: right;
+	position:relative;
+	width: @body-width;
+	.bd {
+		width: @body-width;
+		color: @font-color;
+		font-size: 14px;
+		.content-nav{
+			width: @body-width;
+			height: 38px;
+			background: #fff;
+			.content-nav-s>ul>li{
+				float:left;
+				position:relative;
+				display: inline-block;
+				height: 38px;
+				padding: 0 15px;
+				line-height: 38px;
+				text-align: center;
+				.select{
+					display: none;
+					position:absolute;
+					top:0;
+					left: 0;
+					z-index:100;
+					text-align: center;
+					background: #fff;
+					box-shadow: 0 1px 2px #ccc;
+					box-sizing: border-box;
+				}
+				.select a{
+					color: @font-color;
+				}
+				.select li:hover a{
+					color: @color;
+				}
+				.select1{
+					width:77px;
+				}
+				.select2{
+					width: 103px;
+				}
+			}
+			.content-nav-s >ul >li:first-child {
+				border-right: 1px solid #eee;
+			}
+			.content-nav-s >ul >li:hover >.select{
+				display:block;
+			}
+			.previewMode{
+				width:72px;
+				height:38px;
+				float:right;
+				i{
+					display:inline-block;
+					float:left;
+					width:35px;
+					height:38px;
+					cursor:pointer;
+				}
+				i.icon-kuai{
+					background: url(../img/course/icon-kuai.png) no-repeat;
+					background-size: 14px 14px;
+					background-position: center center;
+					border-left:1px solid #eee;
+					border-right:1px solid #eee;
+				}
+				i.icon-list{
+					background: url(../img/course/icon-list.png) no-repeat;
+					background-size: 14px 14px;
+					background-position: center center;
+				}
+			}
+		}
+	}
+}
+/*course-introduce*/ 
+.course-introduce{
+	position:relative;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	width:@body-width;
+	// height: 1890px;
+	ul.mode1{
+		display:block;
+		li{
+			float:left;
+			width: 250px;
+			height:225px;
+			margin-right:13px;
+			margin-bottom: 13px;
+			background: #fff;
+		}
+	} 
+	ul.mode1 li:nth-child(3n+3){
+		margin-right: 0;
+	}
+	ul:after{
+		content: '';
+	    display: block;
+	    clear: both;
+	    height: 0;
+	    overflow: hidden;
+	    visibility: hidden;
+	}
+	ul.mode2{
+		display:none;
+		li{
+			width: @body-width;
+			height:100px;
+			margin-bottom:13px;
+			background: #fff;
+		}
+	}
+}
+.lesson{
+	.lesson-pic{
+		position: relative;
+		width:250px;
+		height:135px;
+		.playericon{
+			opacity: 0;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 250px;
+			height: 135px;
+			background: rgba(0, 0, 0, .4);
+			transition: opacity .2s ease;
+			-webkit-transition: opacity .8s ease;
+			-moz-transition: opacity .8s ease;
+			-o-transition: opacity .8s ease;
+			img{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-40px;
+				margin-left:-40px;
+			}
+		}
+	}
+	.lesson-introduce{
+		position:relative;
+		z-index:800;
+		width:250px;
+		height: 88px;
+		padding:10px;
+		background: #fff;
+		box-sizing: border-box;
+		transition: height .5s ease;
+		-webkit-transition: height .5s ease;
+		-moz-transition: height .5s ease;
+		-o-transition: height .5s ease;
+		h2{
+			font-size: 14px;
+			color: #333;
+			line-height: 18px;
+			margin-bottom: 12px;
+			height: 36px;
+			overflow: hidden;
+		}
+		p{
+			// display:none;
+			margin:0;
+			height: 0;
+		    margin-bottom: 10px;
+			color: #808080;
+		    font-size: 12px;
+		    line-height: 18px;
+		    overflow: hidden;
+		    transition: height .5s ease;
+			-webkit-transition: height .5s ease;
+			-moz-transition: height .5s ease;
+			-o-transition: height .5s ease;
+
+		}
+		.cf {
+			position:relative;
+			.line1,.line2{
+				height:26px;
+				line-height:20px;
+			}
+			.line2{
+				display:none;
+			}
+			.clockicon{
+				display:inline-block;
+				width:14px;
+				height:14px;
+				margin-top:3px;
+				margin-right:3px;
+				background: url(../img/course/clock-icon.png) 0 0 no-repeat;
+				background-size: 14px 14px;
+			}
+			.one-ji{
+				display:inline-block;
+				width:14px;
+				height:14px;
+				margin-right:3px;
+				background: url(../img/course/one-ji_1731712.png) 0 0 no-repeat;
+				background-size: 14px 14px;
+			}
+			span{
+				font-size:12px;
+			}
+			>span {
+				display:none;
+				position:absolute;
+				right:0;
+				bottom: 30px;
+			}
+			a {
+				position:absolute;
+				bottom: 5px;
+				right:0;
+				i{
+					display:block;
+					width:16px;
+					height:16px;
+					background: url(../img/course/jsicon.png) 0 0 no-repeat;
+					background-size: 14px 14px;
+				}
+
+			}
+		}
+	}
+}
+.course{
+	.course-pic{
+		float:left;
+		position: relative;
+		.playericon{
+			opacity: 0;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 185px;
+			height: 100px;
+			background: rgba(0, 0, 0, .4);
+			transition: opacity .2s ease;
+			-webkit-transition: opacity .8s ease;
+			-moz-transition: opacity .8s ease;
+			-o-transition: opacity .8s ease;
+			img{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-25px;
+				margin-left:-25px;
+			}
+		}
+	}
+	.course-info{
+		float:left;
+		width:570px;
+		height:100px;
+		margin-left: 15px;
+		h2{
+			position:relative;
+			font-size: 14px;
+			color: #333;
+			line-height: 18px;
+			margin: 5px 0;
+			height: 21px;
+			overflow: hidden;
+			a:last-child {
+				position:absolute;
+				bottom: 5px;
+				right:0;
+				i{
+					display:block;
+					width:16px;
+					height:16px;
+					background: url(../img/course/jsicon.png) 0 0 no-repeat;
+					background-size: 14px 14px;
+				}
+
+			}
+		}
+		p{
+			margin:0;
+			height: 36px;
+		    margin-bottom: 10px;
+			color: #808080;
+		    font-size: 12px;
+		    line-height: 18px;
+		    overflow: hidden;
+		    transition: height .5s ease;
+			-webkit-transition: height .5s ease;
+			-moz-transition: height .5s ease;
+			-o-transition: height .5s ease;
+
+		}
+		.cf {
+			height:26px;
+			line-height:20px;
+			.clockicon{
+				display:inline-block;
+				width:14px;
+				height:14px;
+				margin-top:3px;
+				margin-right:3px;
+				background: url(../img/course/clock-icon.png) 0 0 no-repeat;
+				background-size: 14px 14px;
+			}
+			.one-ji{
+				display:inline-block;
+				width:14px;
+				height:14px;
+				margin-right:3px;
+				background: url(../img/course/one-ji_1731712.png) 0 0 no-repeat;
+				background-size: 14px 14px;
+			}
+			span{
+				font-size:12px;
+			}
+			span:last-child{
+				float:right;
+			}
+			
+		}
+	}
+}
+.page-nav{
+	height:35px;
+	width:@body-width;
+	text-align:center;
+	margin-bottom:30px;
+	ul{
+		margin:15px 10px 20px;
+		li{
+			display:inline-block;
+			float:left;
+			height:32px;
+			line-height: 32px;
+			margin-left:5px;
+			box-sizing:border-box;
+			cursor:pointer;
+		}
+		li.page{
+			width:56px;
+			background: #fff;
+			border: 1px solid #e4e4e4;
+		}
+		li.num{
+			width:32px;
+			background: #fff;
+			border: 1px solid #e4e4e4;
+		}
+		li.num:hover,
+		li.page:hover,
+		li:last-child:hover{
+			border: 1px solid @color;
+			color:@color;
+		}
+		li.bg{
+			background: @color;
+			color:#fff;
+		}
+		li input{
+
+			width:30px;
+			margin: 0 10px;
+			text-indent: 7px;
+			border: 1px solid #e4e4e4;
+		}
+		li:last-child{
+			width:32px;
+			height: 22px;
+			margin-top:5px;
+			line-height:22px;
+			margin-left:10px;
+			background: #fff;
+			border: 1px solid #e4e4e4;
+			cursor:pointer;
+		}
+		li.pgempty{
+			color:#d9d6c3;
+			cursor: default;
+		}
+		li.pgempty:hover{
+			border: 1px solid #e4e4e4;
+			color:#d9d6c3;
+		}
+	}
+}
